@@ -1,16 +1,27 @@
 <!DOCTYPE html>
 <html>
     <head>
-    <meta charset="UTF-8">
+        <meta charset="UTF-8">
         <title>Dungeon4doors</title>
     </head>
-<body>
-    <h1>Dungeon4doors</h1>
-    <h2>Aquí comienza tu aventura.</h2>
-    <p>Esta es la historia de una puerta que tenía mucha prisa por funcionar.
+    <body>
+        <h1>Dungeon4doors</h1>
+        <h2>Aquí comienza tu aventura.</h2>
+        <p>Esta es la historia de una puerta que tenía mucha prisa por funcionar.
     </p> 
-<img src= "img/dungeonDoor.png" width= "405" height= "405">
+        <button id="door"><img src= "img/dungeonDoor.png" width= "405" height= "405" id="doorEntrance"></button>
+        <input onclick="toc">
+        <script>
+        (function()
+        {
+            var saludo = function(){
+                alert("TOC TOC");
+            };
 
-</body>
+            var door = document.getElementById("door");
+            door.addEventListener("click", saludo)
+        }())
+        </script>    
+    </body>
 
 </html>
