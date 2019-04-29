@@ -6,22 +6,15 @@
     </head>
     <body>
         <h1>Dungeon4doors</h1>
-        <h2>Aquí comienza tu aventura.</h2>
-        <p>Esta es la historia de una puerta que tenía mucha prisa por funcionar.
-    </p> 
-        <button id="door"><img src= "img/dungeonDoor.png" width= "405" height= "405" id="doorEntrance"></button>
-        <input onclick="toc">
-        <script>
-        (function()
-        {
-            var saludo = function(){
-                alert("TOC TOC");
-            };
+        <h2>Here your adventure begins!</h2>
+        <p>This is the door's story that was hurry to be open.</p> 
 
-            var door = document.getElementById("door");
-            door.addEventListener("click", saludo)
-        }())
+        <img src= "img/dungeonDoor.png" onclick="knockTheDoor('Toc Toc!')" width= "405" height= "405" id="doorEntrance">
+
+        <script>
+            function knockTheDoor(message){
+                alert(message);
+            };
         </script>    
     </body>
-
 </html>
