@@ -4,16 +4,21 @@
         <meta charset="UTF-8">
         <title>Dungeon4doors</title>
         <script src="js/app.js"></script>
+        <link rel="stylesheet" href="css/styles.css">
     </head>
     <body>
-        <h1>Dungeon4doors</h1>
-        <h2>Here begins your adventure!</h2>
-        <p>This is the story of an ancient relic that was divided into four fragments and hidden behind four magical doors.
-        </p> 
+        <div id="intro">
+            <h1>Dungeon4doors</h1>
+            <h2>Here begins your adventure!</h2>
+            <p>This is the story of an ancient relic that was divided into four fragments and hidden behind four magical doors.
+        </p>
+         
 
-        <img src= "img/dungeonDoor.png" onclick="knockTheDoor('Toc Toc!')" width= "405" height= "405" id="doorEntrance">
+        <img src= "img/dungeonDoor.png" onclick="knockTheDoor('Toc Toc!')" width= "605" height= "605" id="doorEntrance">
+        </div>
 
-        <table>
+        <div id="4doors">
+         <table>
             <tr>
                 <td>empty space</td>
                 <td><img src= "img/blueDoor.png" onclick="knockTheDoor('Welcome to heaven')" width= "200" height= "300" id="blueDoor"></td>
@@ -29,7 +34,9 @@
                 <td><img src= "img/greenDoor.png" onclick="knockTheDoor('Welcome to the wild')" width= "200" height= "300" id="greenDoor"></td>
                 <td>empty space</td>
             </tr>
-        </table>
+         </table>
+        </div>
+    
             
     </body>
 </html>
