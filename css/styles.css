@@ -34,12 +34,12 @@ p{
 
 
 }
-img#doorEntrance{
+.doorEntrance{
     margin: auto;
     margin-left: 350px;
 
 }
-table{
+.disable-content{
     visibility: hidden;
 
 }
